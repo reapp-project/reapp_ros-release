@@ -1,0 +1,8 @@
+string command # optional, might contain a certain start state
+int32  id1
+int32  id2
+---
+string result # optional, might contain the end state
+int32 id
+---
+string state # names the current state, for progress indication

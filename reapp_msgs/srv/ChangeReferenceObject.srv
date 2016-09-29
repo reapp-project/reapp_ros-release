@@ -1,0 +1,6 @@
+#The number of the reference object as listed in SOPAS [0-31]
+
+uint8 reference_object_number
+---
+#success
+bool success

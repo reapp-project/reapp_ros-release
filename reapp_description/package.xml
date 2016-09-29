@@ -1,0 +1,13 @@
+<package format="2">
+  <name>reapp_description</name>
+  <version>0.1.1</version>
+  <description>
+    Common xacros for ReApp
+  </description>
+  <maintainer email="Mathiass.Luedtke@ipa.fraunhofer.de">Mathias Lüdtke</maintainer>
+
+  <license>LGPLv3</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>xacro</exec_depend>
+</package>

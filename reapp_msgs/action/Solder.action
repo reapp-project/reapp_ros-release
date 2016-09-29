@@ -1,0 +1,25 @@
+
+# pre heating time of the solder
+float32 pre_heating_time
+
+# residual heating time of the solder
+float32 residual_heating_time
+
+# soldering temperature
+sensor_msgs/Temperature temperature
+
+# feeding time when soldering
+float32 feeding_time
+
+# feeding speed when soldering
+float32 feeding_speed
+
+---
+
+# result of the soldering process
+bool success
+
+---
+
+# feedback of the soldering process
+string state

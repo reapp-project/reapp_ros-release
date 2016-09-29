@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:urdf="http://www.ros.org/wiki/urdf" name="box">
+    <xacro:macro name="xacro:box" params="name parent link xyz rpy size rgba:=''" > <!-- ugly hack -->
+        <xacro:include filename="$(find reapp_description)/urdf/attach.urdf.xacro" />
+        <xacro:attach/>
+
+        <xacro:property name="z" value="${size.split()[2]}" />
+
+        <link name="${name}_base_link">
+            <visual>
+                <origin xyz="0 0 ${z/2}"/>
+                <geometry>
+                    <box size="${size}"/>
+                </geometry>
+                <xacro:if value="${ rgba is not '' }">
+                    <material name="${name}_material">
+                        <color rgba="${rgba}"/>
+                    </material>
+                </xacro:if>
+            </visual>
+            <collision>
+                <origin xyz="0 0 ${z/2}"/>
+                <geometry>
+                    <box size="${size}"/>
+                </geometry>
+            </collision>
+        </link>
+
+        <joint name="${name}_height_joint" type="fixed" >
+            <origin xyz="0 0 ${z}"/>
+            <parent link="${name}_base_link" />
+            <child link="${name}_top_link" />
+        </joint>
+
+        <link name="${name}_top_link"/>
+    </xacro:macro>
+</robot>

@@ -1,0 +1,8 @@
+#requesting data
+string request
+---
+#result PoseStamped message
+geometry_msgs/PoseStamped result
+
+# success 
+bool success

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:urdf="http://www.ros.org/wiki/urdf" name="link">
+    <xacro:macro name="xacro:link" params="name parent link xyz rpy"> <!-- ugly hack -->
+        <xacro:include filename="$(find reapp_description)/urdf/attach.urdf.xacro" />
+        <xacro:attach to="${name}_link" />
+        <link name="${name}_link" />
+     </xacro:macro>
+</robot>
