@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:urdf="http://www.ros.org/wiki/urdf" name="empty">
-    <xacro:macro name="xacro:link" params="name parent link xyz rpy">
-     </xacro:macro>
-</robot>
