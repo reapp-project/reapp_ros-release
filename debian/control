@@ -1,0 +1,12 @@
+Source: ros-indigo-reapp-description
+Section: misc
+Priority: extra
+Maintainer: Mathias Lüdtke <Mathiass.Luedtke@ipa.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-reapp-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-xacro
+Description: Common xacros for ReApp
