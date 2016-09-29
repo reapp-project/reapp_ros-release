@@ -1,0 +1,8 @@
+ros-indigo-reapp-description (0.1.1-0trusty) trusty; urgency=high
+
+  * added reapp_description
+  * Contributors: Mathias Lüdtke
+
+ -- Mathias Lüdtke <Mathiass.Luedtke@ipa.fraunhofer.de>  Wed, 28 Sep 2016 22:00:00 -0000
+
+
